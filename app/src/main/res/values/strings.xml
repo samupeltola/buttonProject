@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">buttonProject</string>
+    <string name="runStatus">Stopped</string>
+    <string name="buttonZoomIn">Zoom In</string>
+    <string name="buttonZoomOut">Zoom Out</string>
+    <string name="buttonStop">Stop</string>
+    <string name="buttonStart">Start</string>
+</resources>
