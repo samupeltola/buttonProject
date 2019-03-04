@@ -36,11 +36,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
+        android:background="@drawable/button_idle_grey"
+        android:onClick="but_stop"
         android:text="@string/buttonStop"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button1"
-        app:layout_constraintStart_toEndOf="@+id/button1"
 
-        android:background="@drawable/button_idle_grey"/>
+        app:layout_constraintBaseline_toBaselineOf="@+id/button1"
+        app:layout_constraintStart_toEndOf="@+id/button1" />
 
     <Button
         android:id="@+id/button3"
@@ -48,17 +49,19 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="24dp"
+        android:background="@drawable/button_active_green1"
+        android:onClick="zoomin"
         android:text="@string/buttonZoomIn"
-        app:layout_constraintBottom_toTopOf="@+id/textZoom"
-        app:layout_constraintStart_toStartOf="@+id/textZoom"
 
-        android:background="@drawable/button_active_green1"/>
+        app:layout_constraintBottom_toTopOf="@+id/textZoom"
+        app:layout_constraintStart_toStartOf="@+id/textZoom" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:onClick="zoomout"
         android:text="@string/buttonZoomOut"
         app:layout_constraintEnd_toEndOf="@+id/textZoom"
         app:layout_constraintTop_toBottomOf="@+id/textZoom" />
