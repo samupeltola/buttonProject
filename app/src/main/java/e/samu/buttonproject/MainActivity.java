@@ -10,15 +10,19 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button Bu_Start, Bu_Stop, Suurenna;
+    Button Bu_Start, Bu_Stop, Suurenna, Pienenna;
     TextView out, textZoom;
-    Integer zoom;
+    Integer zoom = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Bu_Start = findViewById(R.id.button1);
+        Bu_Stop = findViewById(R.id.button2);
+        Suurenna = findViewById(R.id.button3);
+        Pienenna = findViewById(R.id.button4);
         Bu_Start.setBackgroundResource(R.drawable.button_start_green);
         Bu_Stop.setBackgroundResource(R.drawable.button_idle_grey);
         Suurenna.setBackgroundResource(R.drawable.button_active_green1);
@@ -41,11 +45,12 @@ public class MainActivity extends AppCompatActivity {
     public void but_stop(View v) {
         System.out.println(" Stop ");
 
-        Bu_Start.setBackgroundResource(R.drawable.button_active_green1);
+        Bu_Start.setBackgroundResource(R.drawable.button_start_green);
         Bu_Stop.setBackgroundResource(R.drawable.button_idle_grey);
 
         Bu_Stop.setEnabled(false);
         Bu_Start.setEnabled(true);
+        out.setText("Stopped");
     }
 
     public void zoomin(View v) {
