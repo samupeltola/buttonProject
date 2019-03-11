@@ -6,81 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textZoom"
-        android:layout_width="105dp"
-        android:layout_height="42dp"
-        android:text="Zoom = "
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.388"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.518" />
-
     <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="90dp"
-        android:layout_marginBottom="71dp"
-        android:background="@drawable/button_start_green"
-        android:onClick="but_start"
-        android:text="@string/buttonStart"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
-
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:background="@drawable/button_idle_grey"
-        android:onClick="but_stop"
-        android:text="@string/buttonStop"
-
-        app:layout_constraintBaseline_toBaselineOf="@+id/button1"
-        app:layout_constraintStart_toEndOf="@+id/button1" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="24dp"
-        android:background="@drawable/button_active_green1"
-        android:onClick="zoomin"
-        android:text="@string/buttonZoomIn"
-
-        app:layout_constraintBottom_toTopOf="@+id/textZoom"
-        app:layout_constraintStart_toStartOf="@+id/textZoom" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/button_active_green1"
-        android:onClick="zoomout"
-        android:text="@string/buttonZoomOut"
-        app:layout_constraintEnd_toEndOf="@+id/textZoom"
-        app:layout_constraintTop_toBottomOf="@+id/textZoom" />
-
-    <TextView
-        android:id="@+id/out"
-        android:layout_width="328dp"
-        android:layout_height="63dp"
-        android:layout_marginStart="51dp"
-        android:layout_marginTop="31dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="74dp"
-        android:text="Stopped"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/H1Button"
+        android:layout_width="174dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="102dp"
+        android:onClick="openH1"
+        android:text="H1 - Button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 </android.support.constraint.ConstraintLayout>
