@@ -21,4 +21,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent( this, ButtonActivity.class);
         startActivity(intent);
     }
+    public void openH3(View v) {
+        Intent intent = new Intent( this, FMRadioActivity.class);
+        startActivity(intent);
+    }
 }

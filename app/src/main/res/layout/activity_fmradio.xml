@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FMRadioActivity">
+
+    <ImageButton
+        android:id="@+id/raiseLarge"
+        android:layout_width="55dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="77dp"
+        android:onClick="raise5"
+        android:rotation="180"
+        android:src="@android:drawable/ic_media_rew"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frequencyBar" />
+
+    <ImageButton
+        android:id="@+id/lowerLittle"
+        android:layout_width="55dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="14dp"
+        android:onClick="lower1"
+        android:rotation="180"
+        android:src="@android:drawable/ic_media_play"
+        app:layout_constraintEnd_toStartOf="@+id/raiseLittle"
+        app:layout_constraintTop_toBottomOf="@+id/frequencyBar" />
+
+    <SeekBar
+        android:id="@+id/frequencyBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="172dp"
+        android:layout_marginEnd="2dp"
+        android:max="21"
+        android:progress="11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/minTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="14dp"
+        android:text="87 MHz"
+        app:layout_constraintBottom_toTopOf="@+id/frequencyBar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/maxTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="15dp"
+        android:text="108 MHz"
+        app:layout_constraintBottom_toTopOf="@+id/frequencyBar"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/raiseLittle"
+        android:layout_width="55dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:onClick="raise1"
+        android:src="@android:drawable/ic_media_play"
+        app:layout_constraintEnd_toStartOf="@+id/raiseLarge"
+        app:layout_constraintTop_toBottomOf="@+id/frequencyBar" />
+
+    <ImageButton
+        android:id="@+id/lowerLarge"
+        android:layout_width="55dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="13dp"
+        android:onClick="lower5"
+        android:src="@android:drawable/ic_media_rew"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frequencyBar" />
+
+    <TextView
+        android:id="@+id/currentFrequency"
+        android:layout_width="117dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="30dp"
+        android:background="@color/red"
+        android:text="@string/st"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/channelgroup"
+        android:layout_width="93dp"
+        android:layout_height="198dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginBottom="225dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lowerLarge">
+
+        <RadioButton
+            android:id="@+id/channel_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:onClick="channel1button"
+            android:text="CH 1" />
+
+        <RadioButton
+            android:id="@+id/channel_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="channel2button"
+            android:text="CH 2" />
+
+        <RadioButton
+            android:id="@+id/channel_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="channel3button"
+            android:text="CH 3" />
+
+        <RadioButton
+            android:id="@+id/offButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="offbutton"
+            android:text="OFF" />
+    </RadioGroup>
+</android.support.constraint.ConstraintLayout>

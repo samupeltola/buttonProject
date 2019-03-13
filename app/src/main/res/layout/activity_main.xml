@@ -7,6 +7,16 @@
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/H3Button"
+        android:layout_width="174dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:onClick="openH3"
+        android:text="H3 - FM Radio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/H1Button" />
+
+    <Button
         android:id="@+id/H1Button"
         android:layout_width="174dp"
         android:layout_height="50dp"
@@ -16,4 +26,5 @@
         android:text="H1 - Button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </android.support.constraint.ConstraintLayout>
